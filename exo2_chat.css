@@ -1,0 +1,73 @@
+article{
+    display: flex;
+}
+h1{
+    text-align: center;
+    width: 70%;
+}
+/* 2 gros blocs : main (section = fenetre tchat + div= espace message) et div (liste des utilisateurs)*/
+main{
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    width: 70%;
+}
+
+/*Fenêtre tchat*/
+section{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px lightcoral;
+    border-radius: 5%;
+    margin-bottom: 0.5%;
+    margin-right: 5%;
+    padding: 1%;
+    align-content: flex-end;
+}
+/*On met le texte a 1/2 de la taile de la fenetre, puis on décale avec flex*/
+.droite{
+    background-color: gray;
+    width: 50%;
+    align-self: flex-end;
+    
+}
+.gauche{
+    width: 50%;
+}
+
+/*Espace message : flexbox pour aligner l'ensemble*/
+.messages{
+    display: flex;
+    align-items: center;
+}
+#commentaires{
+    width: 78%;
+    height: 3em;
+}
+input, label{
+    margin: 0 0.5%;
+}
+#submit{
+    color: red;
+    height: 4em;
+    width: 5em;
+    border-radius: 20%;
+    }
+
+/*fenetre des utilisateurs*/
+.users{
+    color: lightseagreen;
+    align-self: center;
+    border: solid lightseagreen 1px;
+    border-radius: 25%;
+    padding: 1%;
+}
+
+ul{
+    list-style-type :none;
+    line-height: 3em;
+}
+
+li{
+    line-height: 1em;
+}

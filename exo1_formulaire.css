@@ -1,0 +1,56 @@
+form{display: flex;
+    flex-direction: column;
+    border: solid black 2px;
+    background-color: gray;
+    height: 250px;
+    width: 400px;
+}
+
+h1, .boutons{
+    text-align: center;
+}
+
+h1{
+    font-size: x-large;
+    background-color: green;
+}
+
+label{
+        margin-left: 30px;
+        margin-right: 20px;
+}
+input{
+    margin: 10px 0px;
+}
+#checkbox{
+    margin-left: 30px;
+}
+#label_checkbox{
+    margin-left: 10px;
+}
+
+#bouton_retour{
+    margin-left: 5px;
+}
+
+.pseudo{
+    background-color: yellow;
+}
+.password{
+    background-color: blue;
+}
+.checkbox{
+    background-color: blueviolet;
+}
+.boutons{
+    margin-top: 20px;
+    background-color: brown;
+}
+
+.input_button{
+    color :aqua;
+}
+.input_button:hover{
+    background-color: black;
+    color: aliceblue;
+}
