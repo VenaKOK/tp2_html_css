@@ -1,0 +1,150 @@
+body{
+    background-color: violet;
+    margin: 0;
+}
+header{
+    text-align: center;
+    background-color: cadetblue;
+}
+header div img {
+    width: 85%;
+}
+h1{
+    color: violet;
+    font-size: 3em;
+}
+
+main{
+    display: flex;
+}
+section{
+    margin: 1vh 1vw;
+}
+main section ul{
+    display: flex;
+    flex-direction: column;
+    background-color: cadetblue;
+    font-size: 1em;
+    height: auto;
+    width: 4vw;
+    list-style: none;
+    padding: 0.5vh 1vw;
+    justify-content: space-evenly;
+    border-radius: 1.5em
+}
+main section ul li{
+    margin-top: 0.5vh;
+    }
+
+main section ul li a{
+    text-decoration: none;
+    background-color: violet;
+    color: aliceblue;
+    
+}
+main section ul li a:hover{
+    background-color: aliceblue;
+    color: violet;
+}
+
+main section article{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: cadetblue;
+    padding: 1vh 1vw;
+    margin: 2vh 1vw;
+    border-radius: 2em;
+}
+
+main section article div{
+    grid-row: 2;
+    grid-column: 1;
+    padding: 1vh 1vw;
+}
+
+main section article p{
+    grid-row: 2;
+    grid-column: 2 /span 2;
+    padding: 1vh 1vw;
+}
+
+.galerie{
+    display: grid;
+    grid-template-columns:1fr;
+    padding: 1vh 1vw;
+    background-color: cadetblue;
+    border-radius: 2em;
+}
+
+.galerie div img {
+    margin : 1vh 1vw;
+}
+
+footer{
+    background-color: cadetblue;
+}
+
+footer nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1vh 1vw;
+    list-style: none;
+}
+
+footer nav ul li a{
+    text-decoration: none;
+    background-color: violet;
+    color: aliceblue;
+}
+
+footer nav ul li a:hover{
+    background-color: aliceblue;
+    color: violet;
+}
+
+@media screen and (max-width: 1300px), (max-device-width: 1300px) {
+    header div img {
+        width: 100%;
+    }
+    main section article{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row: 1fr 1fr 1fr;
+    }
+    main section article div{
+        grid-row: 2;
+        padding: 1vh 1vw;
+    }
+    main section article div img{
+        width: 100%;
+    }
+    main section article p{
+        grid-row: 3;
+        grid-column: 1;
+        padding: 1vh 1vw;
+}
+
+@media screen and (max-width: 1175px), (max-device-width: 1175px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main section ul{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        padding: 2vh 1vw;
+        width: 80%;
+    }
+    .galerie{
+        grid-template-columns:1fr 1fr;
+        padding: 1vh 1vw;
+        background-color: cadetblue;
+    }
+    .galerie h2{
+        grid-row: 1;
+        grid-column: 1 /span 2;
+    }
+}
+
