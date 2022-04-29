@@ -25,22 +25,20 @@ main section ul{
     flex-direction: column;
     background-color: cadetblue;
     font-size: 1em;
-    height: auto;
-    width: 4vw;
     list-style: none;
     padding: 0.5vh 1vw;
     justify-content: space-evenly;
-    border-radius: 1.5em
+    border-radius: 1.5em;
+    white-space:nowrap;
 }
 main section ul li{
-    margin-top: 0.5vh;
+    margin : 1vh 1vw;
     }
 
 main section ul li a{
     text-decoration: none;
     background-color: violet;
     color: aliceblue;
-    
 }
 main section ul li a:hover{
     background-color: aliceblue;
@@ -134,7 +132,7 @@ footer nav ul li a:hover{
         display: flex;
         flex-direction: row;
         width: auto;
-        padding: 2vh 1vw;
+        padding: 2vh 3vw;
         width: 80%;
     }
     .galerie{
@@ -147,4 +145,3 @@ footer nav ul li a:hover{
         grid-column: 1 /span 2;
     }
 }
-
